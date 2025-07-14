@@ -1,0 +1,87 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top,transparent 19%, #3bbb85 20% ,#3bbb85 25% , transparent 26%), radial-gradient(circle at bottom,transparent 19%, #3bbb85 20% ,#3bbb85 25% , transparent 26%), radial-gradient(circle at right,transparent 19%, #3bbb85 20% ,#3bbb85 25% , transparent 26%), radial-gradient(circle at left,transparent 19%, #3bbb85 20% ,#3bbb85 25% , transparent 26%);
+  background-size: 3em 3em;
+  background-color: #134018;
+  opacity: 1;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+#text-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-size: 18px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+#text-input:focus {
+  border-color: #4caf50;
+}
+
+#check-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+#check-btn:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+
+#check-btn::before {
+  content: '\f00c'; 
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 10px;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    border-radius: 0;
+  }
+}
+
+
+
